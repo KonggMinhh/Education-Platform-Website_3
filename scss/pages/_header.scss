@@ -1,0 +1,246 @@
+// Header-top
+.header {
+    min-height: 100vh;
+    padding-top: 52px;
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__action-signin {
+        padding: 12px 12px;
+        font-weight: $font-weight-normal;
+    }
+    &__action-signup {
+        margin-left: 12px;
+        &:hover {
+            background-color: rgba($primary-color, 0.1);
+        }
+    }
+}
+.navbar__list {
+    display: flex;
+    align-items: center;
+}
+.navbar__link:hover {
+    color: $font-link-color;
+    text-shadow: 1px 0 0 currentColor;
+}
+.navbar__link {
+    color: $font-link-color;
+    padding: 12px 20px;
+}
+.action {
+    display: flex;
+    align-items: center;
+}
+// Hero
+.hero {
+    margin-top: 50px;
+    padding-bottom: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 136px;
+    &__content {
+        flex-shrink: 0;
+        width: 40%;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 1.4rem;
+        margin-bottom: 18px;
+    }
+    &__heading {
+        font-size: 6.2rem;
+        line-height: 1.16;
+    }
+    &__desc {
+        color: $font-desc-color;
+        width: 374px;
+        font-size: 1.8rem;
+        margin-top: 46px;
+        line-height: 1.78;
+    }
+    &__media {
+        flex: 1;
+        justify-content: flex-end;
+    }
+    &__images {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__img {
+        display: block;
+        width: 576px;
+        height: 631px;
+        background-color: #ddf4f3;
+        object-fit: cover;
+    }
+    &__cta {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-top: 52px;
+        & .btn:hover {
+            background-color: rgba($primary-color, 0.9);
+        }
+    }
+    &__play {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+    }
+    // Hero course
+    &__course {
+        position: absolute;
+        top: 149px;
+        left: -40px;
+        padding: 18px 25px;
+        background: #fefefd;
+        box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+        border-radius: $card-border-radius-icon;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 16px;
+        }
+        &-book {
+            position: relative;
+            width: 36px;
+            height: 40px;
+            background-color: #ff8282;
+            border-radius: 4px 2px 2px 4px;
+            &::before {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 28px;
+                height: 4px;
+                left: 4px;
+                bottom: 8px;
+                background: $white;
+                border-radius: 4px;
+            }
+        }
+        &-label {
+            max-width: 55px;
+            font-weight: $font-weight-medium;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: $font-heading-color;
+        }
+    }
+    // Student
+    &__student {
+        position: absolute;
+        padding: 17px 35px;
+        right: 45px;
+        bottom: 41px;
+        background: #fefefd;
+        box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.05);
+        border-radius: 24px;
+        &-title {
+            display: inline-block;
+            font-weight: $font-weight-medium;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: $font-heading-color;
+            margin-bottom: 8px;
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+        }
+        &-img {
+            --background-color: #1ebfc1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33px;
+            height: 33px;
+            background: var(--background-color);
+            border-radius: 50%;
+            margin-right: -8px;
+            &:nth-child(2) {
+                --background-color: #ffc147;
+            }
+            &:nth-child(3) {
+                --background-color: #ff947a;
+            }
+            &:nth-child(4) {
+                --background-color: #bf83ff;
+            }
+        }
+        &-thumb {
+            position: absolute;
+            width: 100%;
+            object-fit: cover;
+        }
+        &-desc {
+            font-weight: $font-weight-medium;
+            font-size: 1rem;
+            line-height: 33px;
+            text-align: center;
+            color: $white;
+        }
+    }
+    // statistics
+    &__statistics {
+        position: absolute;
+        padding: 16px 25px 23px;
+        bottom: 46px;
+        left: -65px;
+        background: $white;
+        box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+        border-radius: 24px;
+        &-title {
+            font-weight: $font-weight-medium;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: $font-heading-color;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        &-row {
+            --width: 74px;
+            position: relative;
+            width: var(--width);
+            height: 6px;
+            margin-bottom: 12px;
+            background: #edf1f5;
+            border-radius: 3px;
+            &::before {
+                content: "";
+                position: absolute;
+                display: inline-block;
+                width: calc(var(--width) - 35px);
+                height: 6px;
+                background: #fb9899;
+                border-radius: 3px;
+            }
+            &:nth-of-type(2)::before {
+                width: calc(var(--width) - 23px);
+            }
+            &:nth-of-type(3)::before {
+                width: calc(var(--width) - 41px);
+            }
+            &-no {
+                --width: 26px;
+                width: var(--width);
+                margin: 16px auto auto;
+                height: 6px;
+                background: #edf1f5;
+                border-radius: 3px;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: $btn-padding-y $btn-padding-x;
+    color: $font-signin-color;
+    outline: none;
+    font-weight: $btn-font-weight;
+    font-size: $btn-font-size;
+    font-family: $font-primary;
+    background: transparent;
+    border-radius: $btn-border-radius;
+}
+.btn-outline-primary {
+    border-radius: $btn-border-radius;
+    color: $primary-color;
+    border-width: $btn-width;
+    border-style: solid;
+    font-family: $font-primary;
+    border-color: $primary-color;
+}
+.btn-primary {
+    min-width: 186px;
+    line-height: 68px;
+    padding: 0 $btn-padding-x;
+    font-family: $font-primary;
+    font-size: $btn-font-size;
+    color: $white;
+    outline: $primary-color;
+    background-color: $primary-color;
+    border-style: solid;
+    border-width: $btn-width;
+    border-color: $primary-color;
+}
+.btn-sm {
+    min-width: 108px;
+    line-height: 48px;
+    padding: 0 $btn-padding-sm-x;
+    font-family: $font-primary;
+    font-size: $btn-font-size-sm;
+    color: $primary-color;
+    outline: $primary-color;
+    border-style: solid;
+    border-radius: $btn-border-radius-sm;
+    border-width: $btn-width;
+    border-color: $primary-color;
+}

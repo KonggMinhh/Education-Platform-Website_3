@@ -1,0 +1,19 @@
+.countdown {
+    margin-top: 130px;
+    padding-bottom: 135px;
+    &__row {
+        width: 862px;
+        margin: 0 auto;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 200px;
+        text-align: center;
+    }
+    &-item__quantity {
+        display: inline-block;
+        font-size: 6.2rem;
+        margin-bottom: 11px;
+    }
+}

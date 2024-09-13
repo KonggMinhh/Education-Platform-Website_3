@@ -1,0 +1,19 @@
+.cta {
+    padding: 76px 0 88px;
+    background: #def6f5;
+    &__row {
+        display: flex;
+        align-items: center;
+        column-gap: 410px;
+    }
+    &__content {
+        width: 36%;
+    }
+    .cta__heading {
+        color: #070707;
+        margin-bottom: 18px;
+    }
+    &__btn:hover {
+        background-color: rgba($primary-color, 0.9);
+    }
+}

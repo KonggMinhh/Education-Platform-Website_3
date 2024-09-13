@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: $font-primary;
+}
+a {
+    text-decoration: none;
+}
+.text-heading {
+    color: $font-heading-color;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-heading;
+    line-height: $heading-line-height;
+}
+
+.text-title {
+    color: $font-title-color;
+    font-size: $font-size-title;
+    font-weight: $font-weight-bold;
+    line-height: $title-line-height;
+}
+.text-desc {
+    color: $font-title-color;
+    font-size: $font-size-description;
+    line-height: $desc-line-height;
+}

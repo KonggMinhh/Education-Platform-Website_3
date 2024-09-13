@@ -1,0 +1,21 @@
+.card-form-icon {
+    --background-color: #ccc;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $card-border-radius-icon;
+    width: 102px;
+    height: 106px;
+    border: 1px solid var(--background-color);
+    background-color: var(--background-color);
+}
+.card-form-bg {
+    --background-color: #ccc;
+    position: relative;
+    width: 359px;
+    height: 393px;
+    border-radius: $card-border-radius-bg;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
